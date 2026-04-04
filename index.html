@@ -227,25 +227,20 @@ canvas#pts{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;
 .notch{position:absolute;top:8px;left:50%;transform:translateX(-50%);width:32px;height:4px;background:rgba(255,255,255,.08);border-radius:100px;z-index:2;}
 
 .plbl{
-  position:absolute;
-  top:0;
-  left:0;
-  right:auto;
-  bottom:auto;
-
+  position:absolute;bottom:0;left:0;right:0;
   padding:.9rem .85rem .7rem;
   background:linear-gradient(transparent,rgba(4,6,12,.95));
-
-  transform:translateY(4px);
-  transition:transform .35s;
+  transform:translateY(4px);transition:transform .35s;
 }
+.phone:hover .plbl{transform:translateY(0)}
 .plbl-cat{
-  font-size:.55rem;
-  margin-bottom:.1rem;
+  font-family:sans-serif;font-size:.58rem;font-weight:600;
+  letter-spacing:.12em;text-transform:uppercase;
+  color:var(--teal);display:block;margin-bottom:.2rem
 }
-
 .plbl-title{
-  font-size:.65rem;
+  font-family:sans-serif;font-size:.72rem;
+  font-weight:600;color:var(--white);line-height:1.3
 }
 
 /* ═══════════════
